@@ -66,7 +66,7 @@ http://localhost:8080
 
 ```
 $ sudo ipconfig getifaddr en0
-192.168.1.85
+192.168.1.103
 ```
 
 ### Launching the hosts
@@ -74,10 +74,10 @@ $ sudo ipconfig getifaddr en0
 Let's start three hosts, like `rancher01`, `rancher02` and  `rancher03'  
 
 ```
-$ docker-machine create -d virtualbox --virtualbox-boot2docker-url https://releases.rancher.com/os/latest/rancheros.iso --virtualbox-cpu-count "1" --virtualbox-memory "1024" --virtualbox-disk-size "20000" --virtualbox-hostonly-nicpromisc "allow-all" rancher01
+$ docker-machine create -d virtualbox --virtualbox-boot2docker-url https://releases.rancher.com/os/latest/rancheros.iso --virtualbox-cpu-count "1" --virtualbox-memory "2048" --virtualbox-disk-size "20000" --virtualbox-hostonly-nicpromisc "allow-all" rancher01
 
-$ docker-machine create -d virtualbox --virtualbox-boot2docker-url https://releases.rancher.com/os/latest/rancheros.iso --virtualbox-cpu-count "1" --virtualbox-memory "1024" --virtualbox-disk-size "20000" --virtualbox-hostonly-nicpromisc "allow-all" rancher02
+$ docker-machine create -d virtualbox --virtualbox-boot2docker-url https://releases.rancher.com/os/latest/rancheros.iso --virtualbox-cpu-count "1" --virtualbox-memory "2048" --virtualbox-disk-size "20000" --virtualbox-hostonly-nicpromisc "allow-all" rancher02
 
-$ docker-machine create -d virtualbox --virtualbox-boot2docker-url https://releases.rancher.com/os/latest/rancheros.iso --virtualbox-cpu-count "1" --virtualbox-memory "1024" --virtualbox-disk-size "20000" --virtualbox-hostonly-nicpromisc "allow-all" rancher03
+$ docker-machine create -d virtualbox --virtualbox-boot2docker-url https://releases.rancher.com/os/latest/rancheros.iso --virtualbox-cpu-count "1" --virtualbox-memory "2048" --virtualbox-disk-size "20000" --virtualbox-hostonly-nicpromisc "allow-all" rancher03
 ```
 
